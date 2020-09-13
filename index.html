@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 
     <title>Pranav Thakur|Portfolio</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/mystyle.css">
 
+
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><h3 class="mylogo">Pranav Thakur</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,38 +28,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto nav-menus">
                 <li class="nav-item my-link active">
-                    <a class="nav-link" href="#portfolio">Portfolio<span class="sr-only">(current)</span></a>
+                    <a class=" link-text" href="#portfolio">Portfolio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item my-link">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class=" link-text" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item my-link">
-                    <a class="nav-link" href="#capabilities">Capabilities</a>
+                    <a class=" link-text" href="#capabilities">Capabilities</a>
                 </li>
                 <li class="nav-item my-link">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class=" link-text" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid mybackground">
-        <h1>I am 
-            <span class="txt-rotate" data-period="2000"
-                data-rotate='[ "Student.", "Web Developer.", "Entrepreneur.", "Adventurer." ]'></span>
-        </h1>
-        <div>
-            <button type="button" class="btn my-btn btn-lg">Download CV</button>
-            <button type="button" class="btn my-btn btn-lg">Contact ME</button>
-        </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/pranav.Thakur51" target="_blank"><img class="social-logo facebook" src="images/icons/facebook.png"></a>
-            <a href="mailto:thakurpranav51@gmail.com" target="_blank"><img class="social-logo gmail" src="images/icons/gmail.png"></a>
-            <a href="https://www.instagram.com/pranav_thakur_51/?hl=en" target="_blank"><img class="social-logo instagram" src="images/icons/instagram.png"></a>
-            <a href="https://www.linkedin.com/in/pranavthakur51/" target="_blank"><img class="social-logo linkedin" src="images/icons/linkedin.png"></a>
-            <a href="https://www.youtube.com/channel/UCNyS-KsjdTiD3DKh-6o6dVA/featured?view_as=subscriber" target="_blank"><img class="social-logo youtube" src="images/icons/youtube.png"></a>
-        </div>
-    </div>
 <section id="portfolio" class="portfolio-section">
     <div class="container-fluid">
         <div class="row">
@@ -76,9 +60,11 @@
                     I am a Final year Computer Engineering Student skilled at Web Development using Front-end technologies like HTML5,CSS3 and JavaScript
                     and Frameworks like Bootstrap as well as hands-on experience in Back-end technologies like Php and MySQL. I have experience in Java,Core Java,
                     Collection framework and Hybernate.
-                    <br>
-                    I am looking for an opportunity to kick start my career.
                 </p>
+                <div class="button-div">
+                    <button type="button" class="btn my-btn btn-lg primary-btn">Download CV</button>
+                    <button type="button" class="btn my-btn btn-lg secondary-btn">Contact ME</button>
+                </div>
             </div>
         </div>
     </div>
@@ -89,16 +75,16 @@
 
 
     <!-- Topic Cards -->
-    <div class="container my-project-mega">
-    <div class="card-deck">
-        <div class="card mycard">
+    <div class="container-fluid my-project-mega">
+    <div class="row my-deck">
+        <div class="col-lg-4 col-md-12 mycard">
             <img class="card-img-top card-image" src="images/Figma1.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">UI/UX for E-commerce Fashion Store</h5>
                 <p class="card-text">I have designed a couple of e-commerce pages for a native app.I build a main page,a category page and a catalogue page.</p>
             </div>
         </div>
-        <div class="card mycard">
+        <div class="col-lg-4 col-md-12 mycard">
             <img class="card-img-top card-image" src="images/Figma2.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">UI/UX for Covid-19 info app</h5>
@@ -106,7 +92,7 @@
                 pages showing symptoms of Covid-19.</p>
             </div>
         </div>
-        <div class="card mycard">
+        <div class="col-lg-4 col-md-12 mycard">
             <img class="card-img-top card-image" src="images/background.JPG" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Single Page Web Application for my Portfolio</h5>
@@ -119,70 +105,111 @@
     </section>
 
 <section id="capabilities" class="capabilities-section">
-<h2 class="my-capabilities">My Capabilities</h2>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-        <h5>HTML :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+    <div class="inner">
+        <div class="header">
+            <h1>My skills</h1>
         </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/html.png" class="skill-icon">
+                    </div>
+                    <h3>HTML 5</h3>
+                    <p>HTML is the standard markup language for Web pages.With HTML you can create your own Website.</p>
+                </div>
+            </div>
 
-        <h5>CSS :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
-        </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/css.png" class="skill-icon">
+                    </div>
+                    <h3>CSS 3</h3>
+                    <p>CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.</p>
+                </div>
+            </div>
 
-        <h5>JavaScript :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-        </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/kisspng-javascript-logo-html-comment-blog-5ae63c23139110.5436874015250381150802.png" class="skill-icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript is the world's most popular programming language.JavaScript is used to program the behavior of web pages</p>
+                </div>
+            </div>
 
-        <h5>Bootstrap :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
-        </div>
-        
-        </div>
-        <div class="col-md-6 col-sm-12">
-        
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/kisspng-bootstrap-logo-computer-software-web-application-p-b-5abb6c2ab15640.3860806115222323627264.png" class="skill-icon">
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Bootstrap 4 is the most popular HTML, CSS, and JavaScript framework for
+                    developing responsive, mobile-first websites.</p>
+                </div>
+            </div>
 
-        <h5>Php :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-        </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/scss.png" class="skill-icon">
+                    </div>
+                    <h3>SaSS</h3>
+                    <p>Sass is a CSS pre-processor.Sass reduces repetition of CSS and therefore saves time.</p>
+                </div>
+            </div>
 
-        <h5>MySQL :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-        </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/kisspng-figma-user-interface-design-designer-logo-apps-design-5ae2b107816577.63914842152480589553.png" class="skill-icon">
+                    </div>
+                    <h3>Ui/Ux Design</h3>
+                    <p>Figma is a great way to quickly design, build, and export files for animation and prototyping.</p>
+                </div>
+            </div>
 
-        <h5>UI/UX Designing:</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-        </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/kisspng-php-logo-programmer-computer-software-it-sticker-5ae9eabfa18986.5568151515252794236617.png" class="skill-icon">
+                    </div>
+                    <h3>Php</h3>
+                    <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</p>
+                </div>
+            </div>
 
-        <h5>Prototyping :</h5>
-        <div class="progress" style="height: 20px;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/mysql.png" class="skill-icon">
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>MySQL Database Service is a fully managed database service to deploy cloud-native applications using the world's most popular open source database.</p>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="images/skill/laravel.png" class="skill-icon">
+                    </div>
+                    <h3>Laravel</h3>
+                    <p>Laravel is the best php framework which supports MVC architecture,ensuring clarity between logic and presentation</p>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </div>
 </section>
 
 <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="my-contact">Contact me now</h2>
-            <div class="card-deck">
-                <div class="card mycard">
+        <div class="container-fluid">
+            <h2 class="my-project">Contact Me </h2>
+            <div class="card-deck my-contact-deck">
+                <div class="card mycard-cont">
                     <div class="card-body my-contact-card">
                         <img src="images/icons/—Pngtree—vector location icon_4231887.png" class="contact-logo">
                         <h5>Our location</h5>
@@ -190,15 +217,15 @@
                         <p>Pimpri Chinchwad,Pune</p>
                     </div>
                 </div>
-                <div class="card mycard">
+                <div class="card mycard-cont">
                     <div class="card-body my-contact-card">
                         <img src="images/icons/—Pngtree—calling telephone glyph icon vector_5199516.png" class="contact-logo">
                         <h5>Call me now</h5>
                         <br>
-                        <a href="tel:+918087975100">+91 8087975100</a>
+                        <a href="tel:+918087975100" class="mob">+91 8087975100</a>
                     </div>
                 </div>
-                <div class="card mycard">
+                <div class="card mycard-cont">
                     <div class="card-body my-contact-card">
                         <img src="images/icons/gmail.png" class="contact-logo">
                         <h5>Write me now</h5>
@@ -240,24 +267,33 @@
             <label for="exampleFormControlTextarea1">Example textarea</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-lg btn-block submit-btn">Submit</button>
     </form>
     </div>
     </div>
     </div>
     </div>    
 </section>
+<h2 class="my-project">Social Links</h2>
+<footer>
+    <div class="container my-social">
+        <div class="row">
+    <div class="col-md-12 col-sm-12 center-col text-center">
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-facebook btn-round"></i></a> 
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-google-plus btn-round"></i></a>  
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-instagram btn-round"></i></a> 
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-github-alt btn-round"></i></a> 
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-youtube btn-round"></i></a>
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-linkedin btn-round"></i></a> 
+        <a href="#" class="btn social-icon button" data-abc="true"><i class="fa fa-dribbble btn-round"></i></a> 
+    </div>
+    </div>
+    </div>
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </body>
